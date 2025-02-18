@@ -10,26 +10,87 @@
     <link rel="icon" 
           href="pp_penus.png" sizes="32x32">
     
+    <style>
+        body {
+            background-color: #000000;
+        }
+
+        ul {
+            position: relative; /* Sit on top of the page content     absolute */ 
+            top: 0;
+            z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+            background-color: #262626; /* Black background with opacity */
+            list-style-type: none;
+            width: 100%; /* Full width (cover the whole page) */
+            margin: 0;
+            padding: 0;
+            border-radius: 48px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+        li a {
+            display: block;
+            color: #ffffff;
+            font-family: monospace;
+            text-align: center;
+            padding: 14px 24px;
+            text-decoration: none;
+        }
+        li a:hover {
+            color: #6734F3;
+        }
+    </style>
+    
 </head>
+
 
 
 <body>
 
+
     <div>
 
+        <!-- NAVIGATION BAr-->
         <div>
-            
+
+            <ul>
+                <li><a href="javascript:alert('file not attatched/still in progress');">ABOUT</a></li>
+                <li><a href="javascript:alert('file not attatched/still in progress');">PORTFOLIO</a></li>
+                <li><a href="javascript:alert('file not attatched/still in progress');"">CONTACT</a></li>
+            </ul>
+
         </div>
+
+
+        <!-- LOWER PART -->
+        <div>
+            <!-- HERO -->
+            <div style="background-color: #262626; border-radius: 14px;">
+                <div>
+                    <p style="color: #C0C0C0;">Hello</p>
+                </div>
+
+                <div>
+                    <p style="color: #ffffff;">I'm Ramon Parachico</p>
+                </div>
+            </div>
+
+
+            <!-- HIGHLIGHTS? -->
+            <div>
+                ...
+            </div>
+        </div>
+        
 
     </div>
 
 
-
-
-
 </body>
-
-
-
-
 </html>
