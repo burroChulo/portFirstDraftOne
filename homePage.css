@@ -1,0 +1,101 @@
+ul {
+    position: relative; /* Sit on top of the page content     absolute */ 
+    top: 0;
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    background-color: #262626; /* Black background with opacity */
+    list-style-type: none;
+    width: 100%; /* Full width (cover the whole page) */
+    margin: 0;
+    padding: 0;
+    border-radius: 48px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    overflow: hidden;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: #ffffff;
+    font-family: monospace;
+    text-align: center;
+    padding: 14px 24px;
+    text-decoration: none;
+    font-size: 20;
+}
+li a:hover {
+    color: #6734F3;
+}
+
+
+
+cards {
+    background-color: #262626; 
+    border-radius: 14px;
+
+    padding: 60px 40px;
+}
+.hero {
+    background-color: #262626; 
+    border-radius: 14px; 
+    margin: 20px 0px;
+}
+
+
+
+jobtext{
+    color: #C0C0C0;
+    text-align: center;
+    font-family: monospace;
+    font-size: 13px;
+}
+titleText {
+    color: #ffffff;
+    text-align: center;
+    font-family: monospace;
+    font-size: 30px;
+}
+subtitleText {
+    color: #C0C0C0;
+    text-align: center;
+    font-family: monospace;
+    font-size: 24px;
+}
+subText {
+    color: #C0C0C0;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+  
+
+
+
+footMonster {
+    position:sticky; /* Sit on top of the page content */
+    bottom: 0px;
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    background-color: #262626; /* Black background with opacity */
+    
+    display: flex;
+    justify-content: space-evenly;
+  
+    list-style-type: none;
+    /*width: 100%;  Full width (cover the whole page) */
+    margin: 0px;
+    padding: 24px 40px;
+    overflow: hidden;
+
+    border-radius: 14px;
+  }
+
+  footMonster a {
+    color: #C0C0C0;
+    text-decoration: none;
+  }
+
+  
+  
