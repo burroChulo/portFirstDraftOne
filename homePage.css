@@ -89,7 +89,74 @@ subtitleText + div {
 }
 
 
+
+
+
+
+
+.contactElements{
+    padding: 45px 0px;
+    background-color: #1B1B1B;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    border-radius: 14px;
+  }
+  labeles {
+    vertical-align: middle;
+    color: #C0C0C0;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
   
+    margin-left: 12px;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    display: inline-block;
+  }
+  input[type="text"], input[type="email"] {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+  
+    border: 0px solid;
+    height: 33px;
+    width: 550px;
+    background-color : #4d4d4d; 
+    color: #FEF2BF;
+  }
+  textarea {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+  
+    border: 0px solid;
+    height: 500px;
+    width: 550px;
+    background-color : #4d4d4d; 
+    color: #FEF2BF;
+  }
+  .send {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+  
+    display: block;
+    border: 0px solid;
+    height: 33px;
+    width: 550px;
+  
+    background-color: #4d4d4d;
+    color: #C0C0C0;
+  }
+  .send:hover {
+    background-color: #2f2f2f;
+    color: #b1b1b1;
+  }
+  
+  
+
+
+
 
 
 
