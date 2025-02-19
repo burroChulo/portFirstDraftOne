@@ -36,19 +36,30 @@
         <div>
             <!-- HERO -->
             <div class="hero">
-                <div style="display: flex; flex-direction: row; justify-content: center;">
+                <heroInsets>
                     <subtitleText>Hello</subtitleText>
 
-                    <jobtext>AVAILABLE FOR JOB</jobtext>
-                </div>
-
-                <div style="display: flex; flex-direction: row; justify-content: center;">
-                    <div>
-                        <titleText style="font-weight: bold;">I'm Ramon Parachico</titleText>
-                        <subText>The best to ever do it</subText>
+                    <div class="jobCont">
+                        <jobtext>AVAILABLE FOR JOB</jobtext>
                     </div>
-                    <img src="hero-image.png" alt="Very Real Image of Me">
-                </div>
+                    
+                </heroInsets>
+
+                <heroInsets style="margin: 70px 42px 60px;">
+                    <div style="display: flex; flex-direction: column; align-items: flex-start;
+                                margin-right: 664px; max-width: 350px;">
+                        <div style="margin-bottom: 15px;">
+                            <titleText style="font-weight: bold;">I'm Ramon Parachico</titleText><br>
+                        </div>
+                        <div>
+                            <subText>The best to ever do it</subText>
+                        </div>                        
+                    </div>
+
+                    <div>
+                        <img src="homepageImages/hero-image.png" alt="Very Real Image of Me">
+                    </div>
+                </heroInsets>
             </div>
 
 
@@ -57,21 +68,71 @@
                         margin: 20px 0px;">
                 <!-- SKILLS -->
                 <cards>
-                    <li style="color: #C0C0C0;">Skills</li>
+                    <div style="margin-bottom: 70px;">
+                        <subtitleText>· Skills</subtitleText>
+                    </div>
+                    
+                    <div style="width: 520px;">
+                        <div style="margin-bottom: 37px;">
+                            <div style="margin-bottom: 12px;">
+                                <subtitleText style="color: #ffffff;">Python</subtitleText>
+                            </div>
+
+                            <div>
+                                <subText>2020 - Present</subText>
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 37px;">
+                            <div style="margin-bottom: 12px;">
+                                <subtitleText style="color: #ffffff;">Java</subtitleText>
+                            </div>
+
+                            <div>
+                                <subText>2021 - Present</subText>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div style="margin-bottom: 12px;">
+                                <subtitleText style="color: #ffffff;">Project Managment</subtitleText>
+                            </div>
+                            
+                            <div>
+                                <subText>2023 - Present</subText>
+                            </div>
+                        </div>
+                    </div>
 
 
                 </cards>
                 
-
-                <div style="display: flex; flex-direction: column;">
+                <!-- SIDEBAR -->
+                <div style="display: flex; flex-direction: column; margin-left: 24px;">
                     <!-- QUOTES/REVIEWS -->
-                    <cards>
-                        <p style="color: #C0C0C0;">“Best Person To Touch a Computer”</p>
+                    <cards style="padding: 60px 88px; margin-bottom: 20px; display: flex; align-items: center;">
+                        <subtitleText>“Best Person To Touch a Computer”</subtitleText>
                     </cards>
 
                     <!-- RESUME -->
-                    <cards>
-                        <p style="color: #C0C0C0;">Resume</p>
+                    <cards style="padding-bottom: 30px;">
+                        <a style="text-decoration: none;" 
+                           href="javascript:alert('no resume here yet');">
+                            <div style="display: flex; flex-direction: row;">
+                                <div style="display: flex; flex-direction: column; justify-content: flex-start;
+                                            margin-right: 250px;">
+                                    <div style="margin-bottom: 15px;">
+                                        <subtitleText>Resume</subtitleText>
+                                    </div>
+                                    <div>
+                                        <subText>Downloadable PDF</subText>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="homepageImages/go_to.png" alt="go to pdf">
+                                </div>
+                            </div>
+                        </a>    
                     </cards>
                 </div>
                 
@@ -81,26 +142,32 @@
         <!-- FOOTER -->
         <div>
             <footMonster>
-                <a href="mailto:ramonparachico4@gmail.com?subject=Personal%20Enquiry&body=Any%20Questions?;">
+                <a style="color: #C0C0C0;
+                          font-size: 24px;"
+                    href="mailto:ramonparachico4@gmail.com?subject=Personal%20Enquiry&body=Any%20Questions?;">
                     Keep In Touch!
                 </a> 
 
-                <div>
-                    <a href="javascript:alert('should take u to insta');">
+                <div style="margin: 5px 0px 5px;">
+                    <a style="color: #ffffff;
+                              font-size: 15px;"
+                        href="https://www.instagram.com/burrochulo/;"" target="_blank">
                         Instagram
                     </a> 
-                    <a href="javascript:alert('should take u to linkdin');">
+                    <a style="color: #ffffff;
+                              font-size: 15px;"
+                        href="javascript:alert('should take u to linkdin');">
                         LinkdIn
                     </a> 
                 </div>
                 
 
-                <jobtext>
-                    AVAILABLE FOR JOB 
-                </jobtext>
+                <div class="jobCont">
+                    <jobtext>AVAILABLE FOR JOB</jobtext>
+                </div>
 
             </footMonster>
-          </div>
+        </div>
           
 
     </div>

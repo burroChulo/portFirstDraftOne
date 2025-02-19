@@ -2,7 +2,7 @@ ul {
     position: relative; /* Sit on top of the page content     absolute */ 
     top: 0;
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-    background-color: #262626; /* Black background with opacity */
+    background-color: #1B1B1B; /* Black background with opacity */
     list-style-type: none;
     width: 100%; /* Full width (cover the whole page) */
     margin: 0;
@@ -32,30 +32,45 @@ li a:hover {
 
 
 cards {
-    background-color: #262626; 
+    background-color: #1B1B1B; 
     border-radius: 14px;
 
     padding: 60px 40px;
 }
+
 .hero {
-    background-color: #262626; 
+    background-color: #1B1B1B; 
     border-radius: 14px; 
     margin: 20px 0px;
+
+    padding: 60px 40px;
+}
+heroInsets {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
 }
 
 
-
+.jobCont {
+    outline: solid #262626;
+    outline-width: 1px;
+    background-color: #161616;
+    box-sizing: border-box;
+    border-radius: 14px; 
+    padding: 5px 17px 3px;
+}
 jobtext{
     color: #C0C0C0;
     text-align: center;
     font-family: monospace;
-    font-size: 13px;
+    font-size: 12px;
 }
 titleText {
     color: #ffffff;
     text-align: center;
     font-family: monospace;
-    font-size: 30px;
+    font-size: 36px;
 }
 subtitleText {
     color: #C0C0C0;
@@ -69,6 +84,10 @@ subText {
     font-family: monospace;
     font-size: 20px;
 }
+subtitleText + div {
+    margin-left: 800px;
+}
+
 
   
 
@@ -78,7 +97,7 @@ footMonster {
     position:sticky; /* Sit on top of the page content */
     bottom: 0px;
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-    background-color: #262626; /* Black background with opacity */
+    background-color: #1B1B1B; /* Black background with opacity */
     
     display: flex;
     justify-content: space-evenly;
@@ -92,10 +111,11 @@ footMonster {
     border-radius: 14px;
   }
 
-  footMonster a {
-    color: #C0C0C0;
+footMonster a {
+    text-align: center;
+    font-family: monospace;
     text-decoration: none;
-  }
+}
 
   
   
