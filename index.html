@@ -15,6 +15,22 @@
     body {
         background-color: #000000;
     }
+
+    highlightsBox {
+        display: flex; 
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 20px 0px;
+    } 
+    @media screen and (max-width: 1380px) {
+        highlightsBox {
+            flex-direction: column;
+        }
+        cards + div {
+            margin-top: 20px;
+        }
+    }
+
 </style>
 
 <body>
@@ -35,7 +51,7 @@
         <div>
             <!-- HERO -->
             <div class="hero">
-                <heroInsets>
+                <heroInsets style="margin: 0px 42px;">
                     <subtitleText>Hello</subtitleText>
 
                     <div class="jobCont">
@@ -45,10 +61,8 @@
                 </heroInsets>
 
                 <heroInsets style="margin: 70px 42px 60px;
-                                    background-color: red;">
-                    <div style="display: flex; flex-direction: column; align-items: flex-start;
-                                background-color: rebeccapurple;
-                                position-anchor: left;">
+                                    display: flex; justify-content: space-between;">
+                    <div style="display: flex; flex-direction: column; align-items: flex-start;">
                         <div style="margin-bottom: 15px;">
                             <titleText style="font-weight: bold;">I'm Ramon Parachico</titleText><br>
                         </div>
@@ -57,7 +71,7 @@
                         </div>                        
                     </div>
 
-                    <div style="position-anchor: --right">
+                    <div>
                         <img src="homepageImages/hero-image.png" alt="Very Real Image of Me">
                     </div>
                 </heroInsets>
@@ -65,10 +79,9 @@
 
 
             <!-- HIGHLIGHTS? -->
-            <div style="display: flex; justify-content: space-evenly;
-                        margin: 20px 0px;">
+            <highlightsBox>
                 <!-- SKILLS -->
-                <cards style="margin-right: 12px;">
+                <cards >
                     <div style="margin-bottom: 70px;">
                         <subtitleText>· Skills</subtitleText>
                     </div>
@@ -107,7 +120,7 @@
                 </cards>
                 
                 <!-- SIDEBAR -->
-                <div style="display: flex; flex-direction: column; margin-left: 12px;">
+                <div style="display: flex; flex-direction: column;">
                     <!-- QUOTES/REVIEWS -->
                     <cards style="padding: 60px 88px; margin-bottom: 20px; display: flex; align-items: center;">
                         <subtitleText>“Best Person To Touch a Computer”</subtitleText>
@@ -136,7 +149,7 @@
                     </cards>
                 </div>
                 
-            </div>
+            </highlightsBox>
         </div>
         
         <!-- FOOTER -->

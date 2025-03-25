@@ -28,7 +28,7 @@ li a {
 li a:hover {
     color: #6734F3;
 }
-
+  
 
 
 cards {
@@ -48,7 +48,7 @@ cards {
 heroInsets {
     display: flex; 
     flex-direction: row; 
-    justify-content: center;
+    justify-content: space-between;
 }
 
 
@@ -99,9 +99,6 @@ subText {
     text-align: center;
     font-family: monospace;
     font-size: 20px;
-}
-subtitleText + div {
-    margin-left: 800px;
 }
 
 
