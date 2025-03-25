@@ -52,6 +52,22 @@ heroInsets {
 }
 
 
+
+projectCont {
+    background: #42426f4d;
+    width: 100%; 
+    height: 100%;
+}
+projectCont + projectCont {
+    margin-left: 24px;
+}
+projectCont:hover {
+    background: #42426F;
+}
+
+
+
+
 .jobCont {
     outline: solid #262626;
     outline-width: 1px;
@@ -132,7 +148,8 @@ subtitleText + div {
   
     border: 0px solid;
     height: 500px;
-    width: 550px;
+    max-width:  550px;
+    width:  550px;
     background-color : #4d4d4d; 
     color: #FEF2BF;
   }
