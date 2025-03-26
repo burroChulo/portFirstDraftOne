@@ -22,6 +22,11 @@
         flex-direction: row;
         margin: 20px 0px;
     } 
+    resumeCard{
+        display: flex; 
+        flex-direction: column; 
+        justify-content: flex-start;
+    }
     @media screen and (max-width: 1380px) {
         highlightsBox {
             flex-direction: column;
@@ -129,19 +134,17 @@
                     <!-- RESUME -->
                     <cards style="padding-bottom: 30px;">
                         <a style="text-decoration: none;"
-                        target="_blank" 
-                            href="WACKO.jpg" download="TRIAL">
-                            <div style="display: flex; flex-direction: row;">
-                                <div style="display: flex; flex-direction: column; justify-content: flex-start;
-                                            margin-right: 250px;">
+                           target="_blank" href="WACKO.jpg" download="TRIAL">
+                            <div style="display: flex; flex-direction: row; justify-content: space-between">
+                                <resumeCard style="float: left;">
                                     <div style="margin-bottom: 15px;">
                                         <subtitleText>Resume</subtitleText>
                                     </div>
                                     <div>
                                         <subText>Downloadable PDF</subText>
                                     </div>
-                                </div>
-                                <div>
+                                </resumeCard>
+                                <div style="float: right;">
                                     <img src="homepageImages/go_to.png" alt="go to pdf">
                                 </div>
                             </div>
