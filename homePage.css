@@ -53,16 +53,19 @@ heroInsets {
 
 
 
-projectCont {
+.projectCont {
     background: #42426f4d;
+    border: none;
     width: 100%; 
     height: 100%;
 }
-projectCont + projectCont {
+.projectCont + .projectCont {
     margin-left: 24px;
 }
-projectCont:hover {
+.projectCont:hover {
     background: #42426F;
+    border: none;
+
 }
 
 
