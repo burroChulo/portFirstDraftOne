@@ -20,7 +20,7 @@
         display: flex; 
         justify-content: space-between;
         flex-direction: row;
-        margin: 20px 0px;
+        margin: 2.5% 0px;
     } 
     resumeCard{
         display: flex; 
@@ -32,14 +32,24 @@
             flex-direction: column;
         }
         cards + div {
-            margin-top: 20px;
+            margin-top: 0.5%;
         }
+    }
+    @media screen and (max-width: 475px) {
+        heroInsets {
+            flex-direction: column;
+        }
+        li a {
+            font-size: 10px;
+        }
+
+        
     }
 
 </style>
 
 <body>
-    <div style="margin: 30px 60px;">
+    <div style="margin: 1% 2%;">
 
         <!-- NAVIGATION BAr-->
         <div>
@@ -55,7 +65,7 @@
         <div>
             <!-- HERO -->
             <div class="hero">
-                <heroInsets style="margin: 0px 42px;">
+                <heroInsets style="margin: 0px 3%;">
                     <subtitleText>Hello</subtitleText>
 
                     <div class="jobCont">
@@ -64,10 +74,10 @@
                     
                 </heroInsets>
 
-                <heroInsets style="margin: 70px 42px 60px;
+                <heroInsets style="margin: 5% 3% 4%;
                                     display: flex; justify-content: space-between;">
                     <div style="display: flex; flex-direction: column; align-items: flex-start;">
-                        <div style="margin-bottom: 15px;">
+                        <div style="margin-bottom: 0.7%;">
                             <titleText style="font-weight: bold;">I'm Ramon Parachico</titleText><br>
                         </div>
                         <div>
@@ -86,13 +96,13 @@
             <highlightsBox>
                 <!-- SKILLS -->
                 <cards >
-                    <div style="margin-bottom: 70px;">
+                    <div style="margin-bottom: 4%;">
                         <subtitleText>· Skills</subtitleText>
                     </div>
                     
-                    <div style="width: 520px;">
-                        <div style="margin-bottom: 37px;">
-                            <div style="margin-bottom: 12px;">
+                    <div style="max-width: 520px;">
+                        <div style="margin-bottom: 2.5%;">
+                            <div style="margin-bottom: 1%;">
                                 <subtitleText style="color: #ffffff;">Python</subtitleText>
                             </div>
 
@@ -101,8 +111,8 @@
                             </div>
                         </div>
 
-                        <div style="margin-bottom: 37px;">
-                            <div style="margin-bottom: 12px;">
+                        <div style="margin-bottom: 2.5%;">
+                            <div style="margin-bottom: 1%;">
                                 <subtitleText style="color: #ffffff;">Java</subtitleText>
                             </div>
 
@@ -112,7 +122,7 @@
                         </div>
 
                         <div>
-                            <div style="margin-bottom: 12px;">
+                            <div style="margin-bottom: 1%;">
                                 <subtitleText style="color: #ffffff;">Project Managment</subtitleText>
                             </div>
                             
@@ -126,13 +136,13 @@
                 <!-- SIDEBAR -->
                 <div style="display: flex; flex-direction: column;">
                     <!-- QUOTES/REVIEWS -->
-                    <cards style="padding: 60px 88px; margin-bottom: 20px; display: flex; align-items: center; flex-direction: column; justify-content: space-between;">
+                    <cards style="padding: 5% 88px; margin-bottom: 20px; display: flex; align-items: center; flex-direction: column; justify-content: space-between;">
                         <subtitleText>“Best Person To Touch a Computer”</subtitleText>
                         <subText>- Michael Montijo</subText>
                     </cards>
 
                     <!-- RESUME -->
-                    <cards style="padding-bottom: 30px;">
+                    <cards style="padding-bottom: 3%;">
                         <a style="text-decoration: none;"
                            target="_blank" href="WACKO.jpg" download="TRIAL">
                             <div style="display: flex; flex-direction: row; justify-content: space-between">

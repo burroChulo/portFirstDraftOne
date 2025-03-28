@@ -1,0 +1,68 @@
+body {
+    background-color: #1B1B1B;
+}
+
+ul {
+    position: relative; /* Sit on top of the page content     absolute */ 
+    top: 0;
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    background-color: #1B1B1B; /* Black background with opacity */
+    list-style-type: none;
+    width: 100%; /* Full width (cover the whole page) */
+    margin: 0;
+    padding: 0;
+    border-radius: 48px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    overflow: hidden;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: #ffffff;
+    font-family: monospace;
+    text-align: center;
+    padding: 14px 24px;
+    text-decoration: none;
+    font-size: 20;
+}
+li a:hover {
+    color: #6734F3;
+}
+li current {
+    color: hotpink;
+    font-size: 64px;
+}
+
+.container{
+    background-color: #6734F3;
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1fr 1fr;
+    gap: 4%;
+}
+
+.p1{
+    grid-row: 1/span 1;
+    grid-column: 1/span 2;
+    background-image: url('casaBonita.png');
+}
+
+.box{
+    min-width: 33%;
+    border: 4px solid white;
+    border-radius: 3%;
+}
+
+@media screen and (max-width:  375px) {
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .p1 {
+        grid-column: 1/span 1;
+    }
+    
+}
+
