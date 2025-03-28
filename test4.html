@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Background Buttons</title>
+    <style>
+        .image-button {
+            display: inline-block;
+            width: 200px;
+            height: 50px;
+            background-image: url('your-image-url.jpg'); /* Replace with your image URL */
+            background-size: cover; /* Ensures the image covers the button */
+            background-position: center; /* Centers the image */
+            border: none;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            text-decoration: none; /* Removes underline if it's a link */
+        }
+
+        .image-button:hover {
+            opacity: 0.8; /* Slight fade effect on hover */
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="image-button">Click Me</a>
+</body>
+</html>
