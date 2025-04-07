@@ -10,6 +10,10 @@
     <link rel="icon" 
           href="pp_penus.png" sizes="32x32">
     <link rel="stylesheet" href="module_proj.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <style>
     body {
@@ -25,6 +29,12 @@
     }
     div2 a:hover {
         color: #6734F3;
+    }
+    .inknut-antiqua-light {
+        color: #ffffff;
+        font-family: "Inknut Antiqua", serif;
+        font-weight: 300;
+        font-style: normal;
     }
 </style>
 
@@ -50,7 +60,7 @@
                             display: flex; flex-direction:row; align-items: flex-start;
                             margin-bottom: 25px;">
                     <button class="projectCont" onclick="openPopup('Casa Bonita Mock Project')" id="CasaBonita">
-                        <p>Restaurant Management System (Casa Bonita)</p>
+                        <p class="inknut-antiqua-light" style="font-size: 25px;">Restaurant Management System (Casa Bonita)</p>
                     </button>
         
                     <button class="projectCont" onclick="openPopup()">
@@ -83,8 +93,8 @@
             
             <div class="popup-content">
               <div class="left-side">
-                <h3 id="output"></h3>
-                <p id="69">This is the left side of the popup where you can add information, text, or any other content.</p>
+                <h3 id="output" style="color: #ffffff;"></h3>
+                <p id="69" style="color: #C0C0C0;">This is the left side of the popup where you can add information, text, or any other content.</p>
               </div>
               <div class="right-side">
                 <iframe id="frm" src="form1.pdf" title="Embedded PDF"></iframe>
