@@ -9,65 +9,22 @@
 
     <link rel="icon" 
           href="pp_penus.png" sizes="32x32">
-    <link rel="stylesheet" href="homePage.css">
+    <link rel="stylesheet" href="module_proj.css">
 </head>
 <style>
     body {
         background-color: #000000;
     }
-    
-    .popup-card {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 70%;
-      background: white;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      border-radius: 8px;
-      overflow: hidden;
-      display: none;
-    }
 
-    .popup-content {
-      display: flex;
-      height: 400px;
+    div2 {
+        margin: 5px 0px 5px;
     }
-
-    .left-side {
-      flex: 1;
-      padding: 20px;
-      overflow-y: auto;
-      border-right: 1px solid #ddd;
+    div2 a {
+        color: #ffffff;
+        font-size: 15px;
     }
-
-    .right-side {
-      flex: 1;
-      overflow-y: auto;
-    }
-
-    .right-side iframe {
-      width: 100%;
-      height: 100%;
-    }
-
-    .close-btn {
-      padding: 8px 16px;
-      background-color: #ff5757;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      display: block;
-      margin: 10px auto;
-    }
-
-    .close-btn:hover {
-      background-color: #e34747;
-    }
-
-    .show {
-      display: block;
+    div2 a:hover {
+        color: #6734F3;
     }
 </style>
 
@@ -92,8 +49,8 @@
                 <div style="height: 451px;
                             display: flex; flex-direction:row; align-items: flex-start;
                             margin-bottom: 25px;">
-                    <button class="projectCont" onclick="openPopup()" id="project1">
-                        <p>Project 1</p>
+                    <button class="projectCont" onclick="openPopup('Casa Bonita Mock Project')" id="CasaBonita">
+                        <p>Restaurant Management System (Casa Bonita)</p>
                     </button>
         
                     <button class="projectCont" onclick="openPopup()">
@@ -126,12 +83,11 @@
             
             <div class="popup-content">
               <div class="left-side">
-                <h3 id="output">Information</h3>
-                <p>This is the left side of the popup where you can add information, text, or any other content.</p>
-                <p>You can scroll this section if the content overflows.</p>
+                <h3 id="output"></h3>
+                <p id="69">This is the left side of the popup where you can add information, text, or any other content.</p>
               </div>
               <div class="right-side">
-                <iframe src="form1.pdf" title="Embedded PDF"></iframe>
+                <iframe id="frm" src="form1.pdf" title="Embedded PDF"></iframe>
               </div>
             </div>
             <button class="close-btn" onclick="closePopup()">Close</button>
@@ -140,44 +96,59 @@
         
         <!-- FOOTER -->
         <div>
-            <footMonster>
-                <a style="color: #C0C0C0;
-                          font-size: 24px;"
-                    href="mailto:ramonparachico4@gmail.com?subject=Personal%20Enquiry&body=Any%20Questions?;">
-                    Keep In Touch!
+          <footMonster>
+            <a style="color: #C0C0C0;
+                      font-size: 24px;"
+                href="mailto:ramonparachico4@gmail.com?subject=Personal%20Enquiry&body=Any%20Questions?;">
+                Keep In Touch!
+            </a> 
+
+            <div2>
+                <a href="https://www.instagram.com/burrochulo/;" target="_blank">
+                    Instagram
                 </a> 
+                <a href="javascript:alert('should take u to linkdin');">
+                    LinkdIn
+                </a> 
+            </div2>
+            
 
-                <div style="margin: 5px 0px 5px;">
-                    <a style="color: #ffffff;
-                              font-size: 15px;"
-                        href="https://www.instagram.com/burrochulo/;"" target="_blank">
-                        Instagram
-                    </a> 
-                    <a style="color: #ffffff;
-                              font-size: 15px;"
-                        href="javascript:alert('should take u to linkdin');">
-                        LinkdIn
-                    </a> 
-                </div>
-                
+            <div class="jobCont">
+                <jobtext>AVAILABLE FOR JOB</jobtext>
+            </div>
 
-                <div class="jobCont">
-                    <jobtext>AVAILABLE FOR JOB</jobtext>
-                </div>
-
-            </footMonster>
+        </footMonster>
         </div>
 
     </div>
 
 </body>
 <script>
-    function openPopup() {
+    function openPopup(divID) {
       document.getElementById('popupCard').classList.add('show');
+      if (typeof divID === 'undefined') {
+        document.getElementById("output").textContent = "TBA";
+        const iframe = document.getElementById("frm");
+        iframe.src = "form1.pdf";
+        document.getElementById("69").textContent = "dne";
+      }
+      else {
+        document.getElementById("output").textContent = divID;
+        choosePDF(divID)
+      }
     }
 
     function closePopup() {
       document.getElementById('popupCard').classList.remove('show');
+    }
+
+
+    function choosePDF(divID) {
+      if (divID === 'Casa Bonita Mock Project') {
+        const iframe = document.getElementById("frm");
+        iframe.src = "casaBonitaDocs/casadocs.pdf";
+        document.getElementById("69").textContent = "This is a mock project used to practice database management. Made using Python and MySQL";
+      }
     }
   </script>
 </html>

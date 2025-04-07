@@ -44,10 +44,21 @@ li current {
     gap: 4%;
 }
 
+.projectCont {
+    background: #42426f4d;
+    border: none;
+    width: 100%; 
+    height: 300px;
+    max-height: 300px;
+}
+.projectCont:hover {
+    background: #42426F;
+
+}
+
 .p1{
     grid-row: 1/span 1;
     grid-column: 1/span 2;
-    background-image: url('casaBonita.png');
 }
 
 .box{
@@ -66,3 +77,26 @@ li current {
     
 }
 
+footMonster {
+    position:sticky; /* Sit on top of the page content */
+    bottom: 0px;
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    background-color: #1B1B1B; /* Black background with opacity */
+    
+    display: flex;
+    justify-content: space-evenly;
+  
+    list-style-type: none;
+    /*width: 100%;  Full width (cover the whole page) */
+    margin: 0px;
+    padding: 24px 40px;
+    overflow: hidden;
+
+    border-radius: 14px;
+  }
+
+footMonster a {
+    text-align: center;
+    font-family: monospace;
+    text-decoration: none;
+}

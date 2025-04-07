@@ -10,12 +10,35 @@
     <link rel="icon" 
           href="pp_penus.png" sizes="32x32">
     <link rel="stylesheet" href="homePage.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "jFS4Oz498bEFywIiO",
+            });
+        })();
+    </script>
 </head>
 <style>
     body {
         background-color: #000000;
     }
+
+    div2 {
+        margin: 5px 0px 5px;
+    }
+    div2 a {
+        color: #ffffff;
+        font-size: 15px;
+    }
+    div2 a:hover {
+        color: #6734F3;
+    }
 </style>
+
+
 
 <body>
 
@@ -34,60 +57,32 @@
 
         <!-- LOWER PART -->
         <div>
-
-
-
         
-        <div style="display: flex; justify-content: center;
-                    padding: 0px 20px; max-width: 750px; margin: 20px auto 20px;">
-            <div class="contactElements"> 
+        <div class="contactElements" style="padding: 30px 0px; margin: 20px auto 20px;"> 
                 <div style="padding: 0px 45px;">
-                    <form method="post" action="send-email.php">
+                    <form id="contact-form" method="post"action="javascript:sendEmail()"autocomplete="off">
                         <div>
-                            <labeles for="name">
-                                Name*
-                            </labeles>
-                        <br>
-                        <input type="text" name="name" id="name" required>
-                        <br>                    
+                            <labeles for="name">Name*</labeles><br>
+                            <input type="text" name="name" id="name" required><br><br>
                         </div>
-                            <br>
-                            <div>
-                            <labeles for="email">
-                                Email*
-                            </labeles>
-                            <br>
-                            <input type="email" name="email" id="email" required>
-                            <br>
-                            </div>
-                            <br>
-                    
-                            <div>
-                            <labeles for="subject">
-                                Subject*
-                            </labeles>
-                            <br>
-                            <input type="text" name="subject" id="subject" required>
-                            <br>
-                            </div>
-                            <br>
-                    
-                            <div>
-                            <labeles for="message">
-                                Message*
-                            </labeles>
-                            <br>
-                            <textarea name="message" id="message" required></textarea> 
-                            <br>
-                            </div>
-                            <br>
-                            
-                            <button class="send"><a>Send</a></button>
+                        <div>
+                            <labeles for="email">Email*</labeles><br>
+                            <input type="email"name="email" id="email" required><br><br>
+                        </div>
+                        <div>
+                            <labeles for="subject">Subject*</labeles><br>
+                            <input type="text" name="subject" id="subject" required><br><br>
+                        </div>                            
+                        <div>
+                            <labeles for="message">Message*</labeles><br>
+                            <textarea name="message" id="message" required></textarea><br><br>
+                        </div>
+                                
+                        <button class="send"><a>Send</a></button>
                     
                     </form>       
                 </div> 
             </div>
-        </div>      
             
         
         <!-- FOOTER -->
@@ -99,18 +94,14 @@
                     Keep In Touch!
                 </a> 
 
-                <div style="margin: 5px 0px 5px;">
-                    <a style="color: #ffffff;
-                              font-size: 15px;"
-                        href="https://www.instagram.com/burrochulo/;"" target="_blank">
+                <div2>
+                    <a href="https://www.instagram.com/burrochulo/;" target="_blank">
                         Instagram
                     </a> 
-                    <a style="color: #ffffff;
-                              font-size: 15px;"
-                        href="javascript:alert('should take u to linkdin');">
+                    <a href="javascript:alert('should take u to linkdin');">
                         LinkdIn
                     </a> 
-                </div>
+                </div2>
                 
 
                 <div class="jobCont">
@@ -125,4 +116,27 @@
 
 
 </body>
+
+<script type="text/javascript">
+
+function sendEmail() {
+    // Get the form values
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var subject = document.getElementById('subject').value;
+    var message = document.getElementById('message').value;
+
+    // Send the email using EmailJS
+    emailjs.send("sending_work_emails", "template_5dmoiuc", {
+        name: name,
+        email: email,
+        subject: subject,
+        message: message
+    })
+
+    document.getElementById("contact-form").reset();
+}
+
+</script>
+
 </html>
