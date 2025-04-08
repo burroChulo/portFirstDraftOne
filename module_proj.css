@@ -155,6 +155,11 @@ cards {
 .close-btn:hover {
     --myColor1: rgb(255, 93, 29);
     --myColor2: rgb(224, 0, 0);
+
+}
+.close-btn:click {
+    --myColor1: rgb(189, 78, 35);
+    --myColor2: rgb(148, 11, 11);
 }
 
 .show {
@@ -196,7 +201,63 @@ subText {
     font-family: monospace;
     font-size: 20px;
 }
-
+.keepInTouch {
+    color: #C0C0C0;
+    font-size: 24px;
+}
+@media screen and (max-width: 605px) {
+    jobtext{
+        font-size: 18px;
+    }
+    titleText {
+        font-size: 27px;
+    }
+    subtitleText {
+        font-size: 18px;
+    }
+    subText {
+        font-size: 15px;
+    }
+    .jobCont {
+        padding: 5px 3% 3px;
+    }
+    jobtext{
+        font-size: 9px;
+    }
+    .keepInTouch {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 475px) {
+    heroInsets {
+        flex-direction: column;
+    }
+    li a {
+        font-size: 10px;
+    }
+    jobtext{
+        font-size: 12px;
+    }
+    titleText {
+        font-size: 18px;
+    }
+    subtitleText {
+        font-size: 12px;
+    }
+    subText {
+        font-size: 10px;
+    }
+    .jobCont {
+        padding: 5px 3% 3px;
+        text-align: center;
+    }
+    jobtext{
+        font-size: 6px;
+    }
+    .keepInTouch {
+        font-size: 12px;
+    }
+}
 
 
 footMonster {

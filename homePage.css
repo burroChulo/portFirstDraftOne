@@ -102,8 +102,64 @@ subText {
     font-family: monospace;
     font-size: 20px;
 }
+.keepInTouch {
+    color: #C0C0C0;
+    font-size: 24px;
+}
 
-
+@media screen and (max-width: 605px) {
+    jobtext{
+        font-size: 18px;
+    }
+    titleText {
+        font-size: 27px;
+    }
+    subtitleText {
+        font-size: 18px;
+    }
+    subText {
+        font-size: 15px;
+    }
+    .jobCont {
+        padding: 5px 3% 3px;
+    }
+    jobtext{
+        font-size: 9px;
+    }
+    .keepInTouch {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 475px) {
+    heroInsets {
+        flex-direction: column;
+    }
+    li a {
+        font-size: 10px;
+    }
+    jobtext{
+        font-size: 12px;
+    }
+    titleText {
+        font-size: 18px;
+    }
+    subtitleText {
+        font-size: 12px;
+    }
+    subText {
+        font-size: 10px;
+    }
+    .jobCont {
+        padding: 5px 3% 3px;
+        text-align: center;
+    }
+    jobtext{
+        font-size: 6px;
+    }
+    .keepInTouch {
+        font-size: 12px;
+    }
+}
 
 
 
