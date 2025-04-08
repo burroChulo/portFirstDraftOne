@@ -46,7 +46,6 @@
 <body>
     <div style="background-color: #000000; 
                 margin: 3% 6%;">
-
         <!-- NAVIGATION BAr-->
         <div>
             <ul>
@@ -87,23 +86,6 @@
             </div>
         </div>
 
-
-        <!-- POPUP -->
-        <div class="popup-card" id="popupCard">
-            
-            <div class="popup-content">
-              <div class="left-side">
-                <h3 id="output" style="color: #ffffff;"></h3>
-                <p id="69" style="color: #C0C0C0;">This is the left side of the popup where you can add information, text, or any other content.</p>
-              </div>
-              <div class="right-side">
-                <iframe id="frm" src="form1.pdf" title="Embedded PDF"></iframe>
-              </div>
-            </div>
-            <button class="close-btn" onclick="closePopup()">Close</button>
-          </div>
-        
-        
         <!-- FOOTER -->
         <div>
           <footMonster>
@@ -126,8 +108,26 @@
                 <jobtext>AVAILABLE FOR JOB</jobtext>
             </div>
 
-        </footMonster>
+          </footMonster>
         </div>
+
+        <div class="overlay" id="overlay" onclick="closePopup()"></div>
+        <!-- POPUP -->
+        <div class="popup-card" id="popupCard">
+            <div class="popup-content">
+              <div class="left-side">
+                <h3 id="output" style="color: #ffffff;"></h3>
+                <p id="69" style="color: #C0C0C0;">This is the left side of the popup where you can add information, text, or any other content.</p>
+              </div>
+              <div class="right-side">
+                <iframe id="frm" src="form1.pdf" title="Embedded PDF"></iframe>
+              </div>
+            </div>
+            <button class="close-btn" onclick="closePopup()">Close</button>
+        </div>
+        
+        
+        
 
     </div>
 
@@ -135,6 +135,7 @@
 <script>
     function openPopup(divID) {
       document.getElementById('popupCard').classList.add('show');
+      document.getElementById('overlay').classList.add('show');
       if (typeof divID === 'undefined') {
         document.getElementById("output").textContent = "TBA";
         const iframe = document.getElementById("frm");
@@ -149,6 +150,7 @@
 
     function closePopup() {
       document.getElementById('popupCard').classList.remove('show');
+      document.getElementById('overlay').classList.remove('show');
     }
 
 
