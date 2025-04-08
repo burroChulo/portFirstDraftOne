@@ -36,11 +36,16 @@
         font-weight: 300;
         font-style: normal;
     }
+    @media screen and (max-width: 425px) {
+      .projectContainer {
+          height: 50%;
+      }
+    }
 </style>
 
 <body>
     <div style="background-color: #000000; 
-                margin: 30px 60px;">
+                margin: 3% 6%;">
 
         <!-- NAVIGATION BAr-->
         <div>
@@ -53,14 +58,11 @@
 
         <!-- LOWER PART -->
         <div style="background-color: #000000;
-                    margin: 60px 0px;">
-            <div id = style_one
-                 style="position: -webkit-sticky;">
-                <div style="height: 451px;
-                            display: flex; flex-direction:row; align-items: flex-start;
-                            margin-bottom: 25px;">
+                    margin: 3% 0px;">
+            <div id = style_one>
+                <div class="projectContainer">
                     <button class="projectCont" onclick="openPopup('Casa Bonita Mock Project')" id="CasaBonita">
-                        <p class="inknut-antiqua-light" style="font-size: 25px;">Restaurant Management System (Casa Bonita)</p>
+                        <p class="inknut-antiqua-light" style="font-size: 100%;">Restaurant Management System (Casa Bonita)</p>
                     </button>
         
                     <button class="projectCont" onclick="openPopup()">
@@ -68,9 +70,7 @@
                     </button>
                 </div>
                 
-                <div style="height: 451px;
-                            display: flex; flex-direction:row; align-items: flex-start;
-                            margin-bottom: 24px;">
+                <div class="projectContainer">
                     <button class="projectCont" onclick="openPopup()">
                         <p>Project 3</p>
                     </button>
