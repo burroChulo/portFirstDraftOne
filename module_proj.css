@@ -64,25 +64,32 @@ cards {
 
 }
 
+
 #CasaBonita {
     overflow:hidden;
     position:relative;
-    background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("casaBonitaDocs/casaBonita.png");
+    background-size: 100% 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("casaBonitaDocs/casaBonita.png");
     color: #ffffff;
 }
 #CasaBonita::before {
-    content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("casaBonitaDocs/casaBonita.png");
+    background-size: 100% 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("casaBonitaDocs/casaBonita.png");
     opacity: 0;
     transition: opacity 1s ease;
     z-index: 1;
+    padding: 50% 0px;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 300;
+    font-style: normal;
+    content: "Restaurant Management System (Casa Bonita)";
 }
 
 #CasaBonita:hover::before {
@@ -215,6 +222,11 @@ subText {
     color: #C0C0C0;
     font-size: 24px;
 }
+.linkss {
+    color: #ffffff;
+    font-size: 20px;
+}
+
 @media screen and (max-width: 605px) {
     jobtext{
         font-size: 18px;
@@ -236,6 +248,9 @@ subText {
     }
     .keepInTouch {
         font-size: 18px;
+    }
+    .linkss {
+        font-size: 15px;
     }
 }
 @media screen and (max-width: 475px) {
@@ -266,6 +281,9 @@ subText {
     }
     .keepInTouch {
         font-size: 12px;
+    }
+    .linkss {
+        font-size: 10px;
     }
 }
 
