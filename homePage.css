@@ -93,6 +93,9 @@ subText {
 }
 
 @media screen and (max-width: 625px) {
+    li a {
+        font-size: 15px;
+    }
     jobtext{
         font-size: 18px;
     }
@@ -139,34 +142,13 @@ subText {
     }
 }
 
-div2 {
-    margin: 1% 3px;
-}
-div2 a {
-    color: #ffffff;
-    font-size: 15px;
-}
-div2 a:hover {
-    color: #6734F3;
-}
-@media screen and (max-width: 605px) {
-    div2 a {
-        font-size: 11.25px;
-    }
-}
-@media screen and (max-width: 475px) {
-    div2 a {
-        font-size: 7.5px;
-    }
-}
 
 
 
 .contactElements{
-    padding: 25% 0px;
     background-color: #1B1B1B;
 
-    padding: 30px 10%; 
+    padding: 30px 15%; 
     margin: 20px auto 20px;
 
     display: flex;
@@ -192,7 +174,7 @@ labeles {
     font-size: 25px;
 
     width: 100%;
-    margin: 0px 0px 20px;
+    margin: 0px 0px 3%;
 }
 input[type="text"], input[type="email"] {
     font-family: "Times New Roman", Times, serif;
@@ -200,12 +182,12 @@ input[type="text"], input[type="email"] {
   
     border: 0px solid;
     height: 33px;
-    
+
     width: 100%;
     background-color : #4d4d4d; 
     color: #FEF2BF;
 
-    margin: 0px 0px 36px;
+    margin: 0px 0px 6%;
 }
 textarea {
     font-family: "Times New Roman", Times, serif;
@@ -218,7 +200,7 @@ textarea {
     background-color : #4d4d4d; 
     color: #FEF2BF;
 
-    margin: 0px 0px 36px;
+    margin: 0px 0px 6%;
 }
 .send {
     font-family: "Times New Roman", Times, serif;
@@ -241,16 +223,34 @@ textarea {
     labeles {
         font-size: 18px;
     }
+    input[type="text"], input[type="email"] {
+        font-size: 16px;
+        height: 20px;
+    }
+    textarea {
+        font-size: 16;
+        height: 300px;
+    }
     .send {
         font-size: 18px;
+        height: 21px;
     }
 }
 @media screen and (max-width: 475px) {
     labeles {
         font-size: 14px;
     }
+    input[type="text"], input[type="email"] {
+        font-size: 13px;
+        height: 16px;
+    }
+    textarea {
+        font-size: 13;
+        height: 200px;
+    }
     .send {
         font-size: 14px;
+        height: 17px;
     }
 }
 
@@ -258,7 +258,26 @@ textarea {
 
 
 
-
+div2 {
+    margin: 1% 3px;
+}
+div2 a {
+    color: #ffffff;
+    font-size: 15px;
+}
+div2 a:hover {
+    color: #6734F3;
+}
+@media screen and (max-width: 605px) {
+    div2 a {
+        font-size: 11.25px;
+    }
+}
+@media screen and (max-width: 475px) {
+    div2 a {
+        font-size: 7.5px;
+    }
+}
 
 footMonster {
     position:sticky; /* Sit on top of the page content */
